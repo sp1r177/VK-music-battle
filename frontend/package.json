@@ -1,0 +1,45 @@
+{
+  "name": "vk-music-battle-frontend",
+  "version": "1.0.0",
+  "description": "Frontend для VK Mini App музыкальный баттл",
+  "private": true,
+  "dependencies": {
+    "@vkontakte/icons": "^2.74.0",
+    "@vkontakte/vk-bridge": "^2.11.0",
+    "@vkontakte/vkui": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "socket.io-client": "^4.7.2",
+    "axios": "^1.5.0",
+    "eruda": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "homepage": "."
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="VK Музыкальный Баттл - угадывай песни и соревнуйся с друзьями!" />
+  
+  <!-- VK Mini App meta -->
+  <meta property="vk:platform" content="web" />
+  
+  <title>VK Музыкальный Баттл</title>
+  
+  <!-- VK Bridge -->
+  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: var(--vkui--color_background);
+      color: var(--vkui--color_text_primary);
+    }
+    
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    }
+    
+    /* Disable scrollbar for mini app */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    html, body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    /* Loading animation */
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 18px;
+      color: #99a2ad;
+    }
+    
+    .loading-spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e1e5eb;
+      border-radius: 50%;
+      border-top-color: #3f8ae0;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 10px;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <noscript>Для работы приложения необходимо включить JavaScript.</noscript>
+  <div id="root">
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      Загрузка...
+    </div>
+  </div>
+</body>
+</html>
